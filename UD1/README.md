@@ -32,5 +32,7 @@ sudo apt install git
 
 |Nombre|Imagen|Uso|
 |------|------|---|
-|**HTML CSS Support**|![HTML CSS](UD1/Img/HTMLCSSSupport.png)|Ayuda con sintaxis y autocompletado CSS|
-|Live Preview||Visualizar presentación de HTML|
+|**HTML CSS Support**|![HTML CSS Support](image.png)|Ayuda con sintaxis y autocompletado CSS|
+|**Live Preview**|![Live Preview](image-2.png)|Visualizar presentación de HTML|
+|**Markdown All in One**|![Markdown All in One](image-3.png)|Visualizar presentación de Markdown|
+|**XML - Red Hat**|![XML - RedHat](image-4.png)|Ayuda con sintaxis y autocompletado XML|  
