@@ -1,25 +1,52 @@
-<!DOCTYPE html>
-<html lang='
-'>
+<!DOCTYPE html> 
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Page Title</title>
-    <link rel='stylesheet' href='main.css'>
+    <meta charset="UTF-8">
+    <title>Formulario de Incidencia</title>
+
 </head>
 <body>
+    <div>
+        
+  <fieldset>
+    <legend>Datos del Usuario</legend>  
+<form action ="incidencia.php" method="get">
+    <label for="nombre">Usuario:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" maxlength="20" size="15" />
+    <p>
+    <input type="radio" name="sexo" value="A" />Alumno<br/>
+    <input type="radio" name="sexo" value="P" />Profesor<br/>
+    
+    </p></form></div>
+    
+
+<div>
+    
+
+
+<fieldset>
+    <legend>Dónde se Produce</legend>
+    <input type="radio" name="lugar" value="D"/> Todo el departamento<br/>
+    <input type="radio" name="lugar" value="A"/> Todo el  aula<br/>
+    <input type="radio" name="lugar" value="O"/> Sólo en un equipo<br/>
+      <label for="nombre">Identifica el dpto, aula o equipo:</label>
+      <input type="text" id="nombre" name="nombre" value="" maxlength="20" size="15" />
+
+    </fieldset>
     <fieldset>
-        <legend>Formulario de incidencias</legend>
-        <label for="nombre">Nombre Apellido:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
-        <label for="Alumno">Alumno:</label>
-        <input type="radio" id="Alumno" name="Alumno" value="Alumno" required>
-        <label for="Profesor">Profesor:</label>
-        <input type="radio" id="Profesor" name="Profesor" value="Profesor" required>
-        <br>
-        <label for="incidencia">Incidencia:</label>
-        <textarea id="incidencia" name="incidencia" rows="4" cols="40" placeholder="Escriba su incidencia aqui" required></textarea>
-        <br>
-        <input type="submit" value="Enviar">
-    </form>
+        <legend>Información sobre la Incidencia</legend>
+        <p>Descripción de la incidencia:</p>
+        
+        <textarea name="comentario" rows="4" cols="40" placeholder="Describe el problema con detalle"></textarea>
+    <p> Nivel de urgencia:
+        <p></p>
+        <input type="radio" name="urgencia" value="A"/> Alto<br/>
+        <input type="radio" name="urgencia" value="M"/> Medio<br/>
+        <input type="radio" name="urgencia" value="B"/> Bajo<br/>
+    </p>
+    
+    Me gustaría ser avisado por email cuando se resuelva la indicendia:
+<input type="checkbox" name="publicidad" value="on" checked="checked"
+ <p></p>
+<input type="submit" value="Entrar" />
+    <input type="reset" value="Resetear"/>

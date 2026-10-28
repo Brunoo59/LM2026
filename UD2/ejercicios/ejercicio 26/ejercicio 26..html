@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+
+    <fieldset>
+       
+        <legend>Para datos personales</legend>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" pattern="[0-9]{9}" name="telefono" placeholder="9 números" size="6" </input> 
+        <br>
+        <label for="email">Dirección de correo:</label>
+        <input type="email" name="email" placeholder="El formato correcto es nombre+@+servidor de correo" size="38" </input>
+    </fieldset>
+
+<p></p>
+
+    <fieldset>
+        <legend>Para valores numericos</legend>
+        <label for="num personas">Numero de Personas:</label>
+        <input type="number" pattern="[1-9]{20}" value="1" size="20" />
+        <br>
+        <label for="Puntuacion">Mueva la barra para indicar puntuacion (del 1 al 10)</label>
+        <input type="range" min="1" max="10" step="1" value="1" />
+    </fieldset>
+
+<p></p>
+
+    <fieldset>
+        <legend>Url y búsqueda</legend>
+        <label for="Url">Url de tu sitio</label>
+        <input type="url" />
+        <br>
+        <label for="busqueda">¿Qué te interesa buscar?</label>
+        <input type="search"/>
+    </fieldset>
+
+<p></p>
+
+    <fieldset>
+        <legend>Otros tipos</legend>
+        <label for="color">Color</label>
+        <input type="color" />
+    </fieldset>
+
+<p></p>
+
+    <fieldset>
+        <legend>Para fechas</legend>
+        <label for="dia">Seleccione un día (Hasta fin de año)</label>
+        <input type="date" max="2026-31-12" />
+         <br>
+        <label for="hora">Seleccione una hora</label>
+        <input type="time" />
+        <br>
+        <label for="mes">Seleccione un mes (Hasta junio del 2026):</label>
+        <input type="month" max="2026-06-30" />
+        <br>
+        <label for="semana">Seleccione una semana (Hasta junio del 2026):</label>
+        <input type="week" max="2026-06-30" />
+        <br>
+        <label for="fecha y hora">Seleccione fecha y hora:</label>
+        <input type="datetime-local"/>
+    </fieldset>
+
+    
+    <p></p>
+        <input type="submit" value="Entrar"  />
+        <input type="reset" value="Limpiar"/>
+
+    
+
+</body>
+</html>
